@@ -1,7 +1,8 @@
 import React from "react";
 import Paragraph from "./Paragraph";
 import FormField from "./FormField";
-import NumberInput from "./NumberInput"
+import NumberInput from "./NumberInput";
+import Buttons from "./Buttons";
 
 function App() {
   return (
@@ -12,10 +13,7 @@ function App() {
           <Paragraph name={"Kwota"} body={<NumberInput />} />
           <Paragraph name={"Posiadam"} body={<FormField />} />
           <Paragraph name={"Chcę otrzymać"} body={<FormField />} />
-          <div className="form__buttonsContainer">
-            <button className="form__button">Zmień</button>
-            <button className="form__button">Przelicz</button>
-          </div>
+          <Buttons />
           <Paragraph />
         </fieldset>
       </form>
