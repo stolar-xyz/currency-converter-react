@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/valute-conventer-react/static/css/main.b1e03028.chunk.css",
+    "main.js": "/valute-conventer-react/static/js/main.d989be18.chunk.js",
+    "main.js.map": "/valute-conventer-react/static/js/main.d989be18.chunk.js.map",
+    "runtime-main.js": "/valute-conventer-react/static/js/runtime-main.2b60d2e6.js",
+    "runtime-main.js.map": "/valute-conventer-react/static/js/runtime-main.2b60d2e6.js.map",
+    "static/js/2.306e68f4.chunk.js": "/valute-conventer-react/static/js/2.306e68f4.chunk.js",
+    "static/js/2.306e68f4.chunk.js.map": "/valute-conventer-react/static/js/2.306e68f4.chunk.js.map",
+    "static/js/3.284e4ba2.chunk.js": "/valute-conventer-react/static/js/3.284e4ba2.chunk.js",
+    "static/js/3.284e4ba2.chunk.js.map": "/valute-conventer-react/static/js/3.284e4ba2.chunk.js.map",
+    "index.html": "/valute-conventer-react/index.html",
+    "static/css/main.b1e03028.chunk.css.map": "/valute-conventer-react/static/css/main.b1e03028.chunk.css.map",
+    "static/js/2.306e68f4.chunk.js.LICENSE.txt": "/valute-conventer-react/static/js/2.306e68f4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b60d2e6.js",
+    "static/js/2.306e68f4.chunk.js",
+    "static/css/main.b1e03028.chunk.css",
+    "static/js/main.d989be18.chunk.js"
+  ]
+}
