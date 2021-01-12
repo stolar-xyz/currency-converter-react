@@ -1,0 +1,10 @@
+.form__paragraph {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.form__spanText {
+    vertical-align: middle;
+    width: 125px;
+    display: inline-block;
+}
