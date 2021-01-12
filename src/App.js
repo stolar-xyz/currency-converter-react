@@ -5,10 +5,11 @@ import NumberInput from "./NumberInput";
 import Buttons from "./Buttons";
 import Legend from "./Legend";
 import Fieldset from "./Fieldset";
+import Form from "./Form";
 
 function App() {
   return (
-    <form className="form">
+    <Form>
       <Fieldset>
         <Legend title={"Kalkulator walutowy"} />
         <Paragraph name={"Kwota"} body={<NumberInput />} />
@@ -17,7 +18,7 @@ function App() {
         <Buttons />
         <Paragraph />
       </Fieldset>
-    </form>
+    </Form>
   );
 }
 
