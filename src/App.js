@@ -16,7 +16,6 @@ function App() {
         <Paragraph name={"I have"} body={<FormField />} />
         <Paragraph name={"I want to receive"} body={<FormField />} />
         <Buttons />
-        <Paragraph />
       </Fieldset>
     </Form>
   );
