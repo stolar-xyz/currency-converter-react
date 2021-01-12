@@ -11,10 +11,10 @@ function App() {
   return (
     <Form>
       <Fieldset>
-        <Legend title={"Kalkulator walutowy"} />
-        <Paragraph name={"Kwota"} body={<NumberInput />} />
-        <Paragraph name={"Posiadam"} body={<FormField />} />
-        <Paragraph name={"Chcę otrzymać"} body={<FormField />} />
+        <Legend title={"Valute conventer"} />
+        <Paragraph name={"Amount"} body={<NumberInput />} />
+        <Paragraph name={"I have"} body={<FormField />} />
+        <Paragraph name={"I want to receive"} body={<FormField />} />
         <Buttons />
         <Paragraph />
       </Fieldset>

@@ -2,10 +2,10 @@ import React from "react";
 
 const FormField = () => (
     <select className="form__formField">
-        <option value="PLN">PLN - Polska</option>
-        <option value="EUR">EUR - Unia Europejska</option>
-        <option value="USD">USD - USA</option>
-        <option value="GBP">GBP - W.Brytania</option>
+        <option value="PLN">PLN - Poland</option>
+        <option value="EUR">EUR - European Union</option>
+        <option value="USD">USD - United States</option>
+        <option value="GBP">GBP - United Kingdom</option>
     </select>
 );
 
