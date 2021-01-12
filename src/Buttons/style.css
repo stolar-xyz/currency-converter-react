@@ -1,0 +1,16 @@
+.buttons__button {
+    color: white;
+    background-color: hsl(29, 94%, 45%);
+    padding: 10px 15px;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons__button:hover {
+    background-color: hsl(29, 94%, 43%);
+}
+
+.buttons__button:active {
+    background-color: hsl(29, 94%, 35%);
+}

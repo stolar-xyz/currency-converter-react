@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.css";
 
 const Buttons = () => (
-    <div className="form__buttonsContainer">
-        <button className="form__button">Swap</button>
-        <button className="form__button">Convert</button>
+    <div className="buttons">
+        <button className="buttons__button">Swap</button>
+        <button className="buttons__button">Convert</button>
     </div>
 );
 
