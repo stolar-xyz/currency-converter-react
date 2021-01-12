@@ -5,3 +5,5 @@ const Fieldset = ({ children }) => (
         {children}
     </fieldset>
 );
+
+export default Fieldset;
