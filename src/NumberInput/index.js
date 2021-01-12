@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
-const NumberInput = () => (
-    <input className="form__formField js-input-form" step="any" min="0" placeholder="Enter the amount"
-        type="number" />
-);
+const NumberInput = () => {
+    const [number, setNumber] = useState()
+
+    return (
+        <input value={number} onChange={({ target }) => setNumber(target.value)} className="form__formField" step="any" min="0" placeholder="Enter the amount"
+            type="number" />
+    );
+};
 
 export default NumberInput;

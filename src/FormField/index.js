@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
-const FormField = () => (
-    <select className="form__formField">
-        <option value="PLN">PLN - Poland</option>
-        <option value="EUR">EUR - European Union</option>
-        <option value="USD">USD - United States</option>
-        <option value="GBP">GBP - United Kingdom</option>
-    </select>
-);
+const FormField = () => {
+    const [valute, setValute] = useState("PLN - Poland");
+
+    return (
+        <select className="form__formField" value={valute} onChange={({ target }) => setValute(target.value)}>
+            <option>PLN - Poland</option>
+            <option>EUR - European Union</option>
+            <option>USD - United States</option>
+            <option>GBP - United Kingdom</option>
+        </select>
+    );
+};
 
 export default FormField;
