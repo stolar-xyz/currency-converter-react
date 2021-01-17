@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
-const FormField = () => {
-    const [valute, setValute] = useState();
+const FormField = ({ currency, setCurrency }) => {
 
     return (
-        <select className="form__formField" value={valute} onChange={({ target }) => setValute(target.value)}>
+        <select className="form__formField" value={currency} onChange={({ target }) => setCurrency(target.value)}>
             <option></option>
         </select>
     );

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-const NumberInput = () => {
-    const [number, setNumber] = useState()
+const NumberInput = ({ amount, setAmount }) => {
 
     return (
-        <input value={number} onChange={({ target }) => setNumber(target.value)} className="form__formField" step="any" min="0" placeholder="Enter the amount"
+        <input value={amount} onChange={({ target }) => setAmount(target.value)} className="form__formField" step="any" min="0" placeholder="Enter the amount"
             type="number" />
     );
 };
