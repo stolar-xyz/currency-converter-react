@@ -6,6 +6,7 @@ import Buttons from "./Buttons";
 import Legend from "./Legend";
 import Fieldset from "./Fieldset";
 import Form from "./Form";
+import Result from "./Result";
 import currencies from "./currencies";
 
 
@@ -17,17 +18,21 @@ function App() {
   const calculateResult = (currency, amount) => {
     const rate = currencies.find(({ short }) => short === currency).rate;
 
-    setResult("test")
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount / rate,
+      currency,
+    })
   };
 
   return (
-    <Form calculateResult={calculateResult} amount={amount} currency={currency}>
+    <Form calculateResult={calculateResult} amount={amount} currency={currency} result={result}>
       <Fieldset>
         <Legend title={"Valute conventer"} />
         <Paragraph name={"Amount"} body={<NumberInput amount={amount} setAmount={setAmount} />} />
         <Paragraph name={"Valute"} body={<FormField currency={currency} setCurrency={setCurrency} />} />
         <Buttons />
-        <Paragraph name={result} />
+        <Result result={result} />
       </Fieldset>
     </Form>
   );
