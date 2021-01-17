@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <Form calculateResult={calculateResult} amount={amount} currency={currency} result={result}>
+    <Form calculateResult={calculateResult} amount={amount} currency={currency}>
       <Fieldset>
         <Legend title={"Valute conventer"} />
         <Paragraph name={"Amount"} body={<NumberInput amount={amount} setAmount={setAmount} />} />
