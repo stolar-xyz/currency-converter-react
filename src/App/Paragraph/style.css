@@ -1,10 +1,7 @@
 .form__paragraph {
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
     padding: 20px;
-}
-
-.form__spanText {
-    vertical-align: middle;
-    width: 125px;
-    display: inline-block;
 }
