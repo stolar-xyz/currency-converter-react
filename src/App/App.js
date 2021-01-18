@@ -3,7 +3,7 @@ import Paragraph from "./Paragraph";
 import FormField from "./FormField";
 import NumberInput from "./NumberInput";
 import Buttons from "./Buttons";
-import Legend from "./Legend";
+import Header from "./Header";
 import Fieldset from "./Fieldset";
 import Form from "./Form";
 import Result from "./Result";
@@ -28,7 +28,7 @@ function App() {
   return (
     <Form calculateResult={calculateResult} amount={amount} currency={currency}>
       <Fieldset>
-        <Legend title={"Valute conventer"} />
+        <Header title={"Valute conventer"} />
         <Paragraph name={"Amount in PLN*:"} body={<NumberInput amount={amount} setAmount={setAmount} />} />
         <Paragraph name={"Valute:"} body={<FormField currency={currency} setCurrency={setCurrency} />} />
         <Buttons />
