@@ -30,7 +30,7 @@ function App() {
       <Header title={"Currency conventer"} />
       <Paragraph name={"Amount in PLN*:"} body={<FormInput amount={amount} setAmount={setAmount} />} />
       <Paragraph name={"Valute:"} body={<FormSelect currency={currency} setCurrency={setCurrency} />} />
-      <Buttons />
+      <Buttons name={"Convert!"}/>
       <Footer />
       <Result result={result} />
     </Form>
