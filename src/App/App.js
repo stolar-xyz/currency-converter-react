@@ -29,8 +29,8 @@ function App() {
     <Form calculateResult={calculateResult} amount={amount} currency={currency}>
       <Fieldset>
         <Legend title={"Valute conventer"} />
-        <Paragraph name={"Amount"} body={<NumberInput amount={amount} setAmount={setAmount} />} />
-        <Paragraph name={"Valute"} body={<FormField currency={currency} setCurrency={setCurrency} />} />
+        <Paragraph name={"Amount in PLN*:"} body={<NumberInput amount={amount} setAmount={setAmount} />} />
+        <Paragraph name={"Valute:"} body={<FormField currency={currency} setCurrency={setCurrency} />} />
         <Buttons />
         <Result result={result} />
       </Fieldset>
