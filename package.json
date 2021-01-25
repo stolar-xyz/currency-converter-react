@@ -1,8 +1,8 @@
 {
-  "name": "currency-conventer-react",
+  "name": "currency-converter-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stolar-code.github.io/currency-conventer-react/",
+  "homepage": "https://stolar-code.github.io/currency-converter-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",

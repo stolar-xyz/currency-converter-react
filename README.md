@@ -1,8 +1,8 @@
-# Currency conventer React
+# Currency converter React
 
-Live: https://stolar-code.github.io/currency-conventer-react/
+Live: https://stolar-code.github.io/currency-converter-react/
 ## Description
-This is a simple currency conventer created for educational purposes.<br>
+This is a simple currency converter created for educational purposes.<br>
 For me in this project the main role was getting used to **React & create-react-app** environment.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

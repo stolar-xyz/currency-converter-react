@@ -29,7 +29,7 @@ function App() {
   return (
     <Form calculateResult={calculateResult} amount={amount} currency={currency}>
       <Clock />
-      <Header title={"Currency conventer"} />
+      <Header title={"Currency converter"} />
       <Paragraph name={"Amount in PLN*:"} body={<FormInput amount={amount} setAmount={setAmount} />} />
       <Paragraph name={"Valute:"} body={<FormSelect currency={currency} setCurrency={setCurrency} />} />
       <Buttons name={"Convert!"} />
