@@ -1,4 +1,5 @@
 .form__clock {
+    font-family: monospace;
     text-align: right;
     font-size: 14px;
 }
