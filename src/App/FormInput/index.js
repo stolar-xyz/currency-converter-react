@@ -1,11 +1,18 @@
 import React from "react";
-import "./style.css";
+import { Input } from "./styled";
 
 const FormInput = ({ amount, setAmount }) => {
 
     return (
-        <input value={amount} onChange={({ target }) => setAmount(target.value)} className="form__input" step="any" min="0" placeholder="Enter the amount"
-            type="number" required />
+        <Input
+            value={amount}
+            onChange={({ target }) => setAmount(target.value)}
+            step="any"
+            min="0"
+            placeholder="Enter the amount"
+            type="number"
+            required
+        />
     );
 };
 
