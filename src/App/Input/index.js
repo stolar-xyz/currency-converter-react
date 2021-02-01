@@ -1,10 +1,10 @@
 import React from "react";
-import { Input } from "./styled";
+import { StyledInput } from "./styled";
 
-const FormInput = ({ amount, setAmount }) => {
+const Input = ({ amount, setAmount }) => {
 
     return (
-        <Input
+        <StyledInput
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             step="any"
@@ -16,4 +16,4 @@ const FormInput = ({ amount, setAmount }) => {
     );
 };
 
-export default FormInput;
+export default Input;

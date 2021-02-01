@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Label from "./Label";
-import FormSelect from "./FormSelect";
-import FormInput from "./FormInput";
+import Select from "./Select";
+import Input from "./Input";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Form from "./Form";
@@ -30,8 +30,8 @@ function App() {
     <Form calculateResult={calculateResult} amount={amount} currency={currency}>
       <Clock />
       <Header title={"Currency converter"} />
-      <Label name={"Amount in PLN*:"} body={<FormInput amount={amount} setAmount={setAmount} />} />
-      <Label name={"Valute:"} body={<FormSelect currency={currency} setCurrency={setCurrency} />} />
+      <Label name={"Amount in PLN*:"} body={<Input amount={amount} setAmount={setAmount} />} />
+      <Label name={"Valute:"} body={<Select currency={currency} setCurrency={setCurrency} />} />
       <Buttons name={"Convert!"} />
       <Footer />
       <Result result={result} />
