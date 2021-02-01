@@ -1,11 +1,13 @@
 import React from "react";
 import currencies from "../currencies";
-import "./style.css";
+import { Select } from "./styled";
 
 const FormSelect = ({ currency, setCurrency }) => {
 
     return (
-        <select className="form__select" value={currency} onChange={({ target }) => setCurrency(target.value)}>
+        <Select
+            value={currency}
+            onChange={({ target }) => setCurrency(target.value)}>
             {currencies.map((currency => (
                 <option
                     key={currency.short}
@@ -14,7 +16,7 @@ const FormSelect = ({ currency, setCurrency }) => {
                     {currency.name}
                 </option>
             )))}
-        </select>
+        </Select>
     );
 };
 
