@@ -1,11 +1,11 @@
 import React from "react";
-import { StyledHeader } from "./styled";
+import { StyledTitle } from "./styled";
 
 const Header = ({ title }) => (
     <header>
-        <StyledHeader>
+        <StyledTitle>
             {title}
-        </StyledHeader>
+        </StyledTitle>
     </header>
 );
 
