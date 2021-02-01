@@ -1,9 +1,11 @@
 import React from "react";
-import "./style.css";
+import { Button } from "./styled.js";
 
-const Buttons = ({name}) => (
+const Buttons = ({ name }) => (
     <>
-        <button className="form__button">{name}</button>
+        <Button>
+            {name}
+        </Button>
     </>
 );
 
