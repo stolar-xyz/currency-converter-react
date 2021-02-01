@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { StyledParagraph } from "./styled";
 
 const Paragraph = ({ name, body }) => (
-    <p className="form__paragraph">
+    <StyledParagraph>
         {name}{body}
-    </p>
+    </StyledParagraph>
 );
 
 export default Paragraph;
