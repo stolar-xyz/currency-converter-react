@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
-
+import { StyledClock } from "./styled.js";
 const Clock = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -24,9 +23,9 @@ const Clock = () => {
     });
 
     return (
-        <p className="form__clock">
+        <StyledClock>
             Today is {fullDate}
-        </p>
+        </StyledClock>
     );
 };
 
