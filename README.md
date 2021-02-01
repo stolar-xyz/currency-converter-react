@@ -14,12 +14,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - React
  - JSX
  - create-react-app
-###  Methotology
- - BEM
 ### Libraries
  - React.js
  - gh-pages
  - normalize.css
+ - styled-components
 
 ## How to use it?
  1. Type your amount in input (must be in PLN).
