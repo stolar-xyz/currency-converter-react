@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import { StyledForm } from "./styled";
 
 const Form = ({ children, calculateResult, currency, amount }) => {
 
@@ -9,9 +9,9 @@ const Form = ({ children, calculateResult, currency, amount }) => {
     }
 
     return (
-        <form onSubmit={onFormSubmit} className="form">
+        <StyledForm onSubmit={onFormSubmit}>
             {children}
-        </form>
+        </StyledForm>
     )
 };
 
