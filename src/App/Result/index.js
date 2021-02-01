@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.css";
+import { StyledResult } from "./styled";
 
 const Result = ({ result }) => {
     return (
-        <p className="form__result">
+        <StyledResult>
             {!!result && (
                 <>
                     {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;
@@ -13,7 +13,7 @@ const Result = ({ result }) => {
                     </strong>
                 </>
             )}
-        </p>
+        </StyledResult>
     )
 };
 
