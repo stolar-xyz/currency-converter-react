@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { StyledHeader } from "./styled";
 
 const Header = ({ title }) => (
-    <h1 className="form__header">
+    <StyledHeader>
         {title}
-    </h1>
+    </StyledHeader>
 );
 
 export default Header;
