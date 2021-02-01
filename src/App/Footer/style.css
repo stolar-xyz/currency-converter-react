@@ -1,9 +1,0 @@
-.form__footer {
-    margin: 30px;
-}
-
-@media (max-width: 767px) {
-    .form__footer {
-        font-size: 14px;
-    }
-}
