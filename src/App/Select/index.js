@@ -1,5 +1,5 @@
 import React from "react";
-import currencies from "../currencies";
+import { currencies } from "../currencies";
 import { StyledSelect } from "./styled";
 
 const Select = ({ currency, setCurrency }) => {

@@ -1,4 +1,4 @@
-const currencies = [
+export const currencies = [
     {
         short: "USD",
         name: "U.S. Dollar",
@@ -15,5 +15,3 @@ const currencies = [
         rate: 5.11,
     },
 ];
-
-export default currencies;

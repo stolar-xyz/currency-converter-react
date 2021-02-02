@@ -8,7 +8,7 @@ import Form from "./Form";
 import Result from "./Result";
 import Footer from "./Footer";
 import Clock from "./Clock";
-import currencies from "./currencies";
+import { currencies } from "./currencies";
 
 
 function App() {
