@@ -14,8 +14,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - React
  - JSX
  - create-react-app
+ - custom hooks
 ### Libraries
- - React.js
  - gh-pages
  - normalize.css
  - styled-components

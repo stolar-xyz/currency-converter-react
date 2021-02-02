@@ -5,5 +5,5 @@ export const StyledResult = styled.p`
     flex-wrap: wrap;
     justify-content: center;
     font-size: 24px;
-    color: teal;
+    color: ${({ theme }) => theme.colors.main};
 `;

@@ -7,7 +7,7 @@ export const StyledLabel = styled.label`
     font-size: 22px;
     padding: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         font-size: 18px;
         flex-wrap: wrap;
     }

@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     color: white;
-    background-color: teal;
+    background-color: ${({ theme }) => theme.colors.main};
     width: 50%;
     font-size: 18px;
     padding: 10px;
     border: none;
     cursor: pointer;
-    transition: color 0.2s, transform 0.2s;
+    transition: filter 0.2s, transform 0.2s;
 
     &:hover{
-        background-color: hsl(180, 100%, 27.5%);
+        filter: opacity(0.9)
     }
 
     &:active{
         transform: scale(1.05);
-        background-color: hsl(180, 100%, 30%);
+        filter: opacity(0.8)
     }
 `;
