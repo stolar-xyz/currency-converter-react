@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Label from "./Label";
-import Select from "./Select";
-import Input from "./Input";
-import Buttons from "./Buttons";
-import Header from "./Header";
-import Form from "./Form";
-import Result from "./Result";
-import Footer from "./Footer";
-import Clock from "./Clock";
+import Label from "./components/Label";
+import Select from "./components/Select";
+import Input from "./components/Input";
+import Buttons from "./components/Buttons";
+import Header from "./components/Header";
+import Form from "./components/Form";
+import Result from "./components/Result";
+import Footer from "./components/Footer";
+import Clock from "./components/Clock";
 import { currencies } from "./currencies";
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledClock } from "./styled";
-import { useCurrentDate } from "./useCurrentDate";
+import { useCurrentDate } from "../../customHooks/useCurrentDate";
 
 const Clock = () => {
     const fullDate = useCurrentDate();
