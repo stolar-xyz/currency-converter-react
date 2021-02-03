@@ -27,11 +27,23 @@ function App() {
   };
 
   return (
-    <Form calculateResult={calculateResult} amount={amount} currency={currency}>
+    <Form calculateResult={calculateResult}
+      amount={amount}
+      currency={currency}>
       <Clock />
-      <Header title={"Currency converter"} />
-      <Label name={"Amount in PLN*:"} body={<Input amount={amount} setAmount={setAmount} />} />
-      <Label name={"Valute:"} body={<Select currency={currency} setCurrency={setCurrency} />} />
+      <Header title={"Currency converter"}/>
+      <Label
+        name={"Amount in PLN*:"}
+        body={<Input
+          amount={amount}
+          setAmount={setAmount} />}
+      />
+      <Label
+        name={"Valute:"}
+        body={<Select
+          currency={currency}
+          setCurrency={setCurrency} />}
+      />
       <Buttons name={"Convert!"} />
       <Footer />
       <Result result={result} />
