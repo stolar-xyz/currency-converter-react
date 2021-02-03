@@ -11,11 +11,11 @@ export const Button = styled.button`
     transition: filter 0.2s, transform 0.2s;
 
     &:hover{
-        filter: opacity(0.9)
+        filter: brightness(1.1);
     }
 
     &:active{
         transform: scale(1.05);
-        filter: opacity(0.8)
+        filter: brightness(1.2);
     }
 `;
