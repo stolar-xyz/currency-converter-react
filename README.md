@@ -19,6 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - gh-pages
  - normalize.css
  - styled-components
+ - axios
 
 ## How to use it?
  1. Type your amount in input (must be in PLN).
