@@ -8,20 +8,24 @@ import Form from "./components/Form";
 import Result from "./components/Result";
 import Footer from "./components/Footer";
 import Clock from "./components/Clock";
-import { currencies } from "./currencies";
+import Loading from "./components/Loading";
+import Failure from "./components/Failure";
+import { useRatesData } from "./useRatesData";
 
 
 function App() {
   const [result, setResult] = useState();
-  const [currency, setCurrency] = useState(currencies[0].short);
+  const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
 
+  const ratesData = useRatesData();
+
   const calculateResult = (currency, amount) => {
-    const rate = currencies.find(({ short }) => short === currency).rate;
+    const rate = ratesData.rates[currency];
 
     setResult({
       sourceAmount: +amount,
-      targetAmount: amount / rate,
+      targetAmount: amount * rate,
       currency,
     })
   };
@@ -31,22 +35,36 @@ function App() {
       amount={amount}
       currency={currency}>
       <Clock />
-      <Header title={"Currency converter"}/>
-      <Label
-        name={"Amount in PLN*:"}
-        body={<Input
-          amount={amount}
-          setAmount={setAmount} />}
-      />
-      <Label
-        name={"Valute:"}
-        body={<Select
-          currency={currency}
-          setCurrency={setCurrency} />}
-      />
-      <Buttons name={"Convert!"} />
-      <Footer />
-      <Result result={result} />
+      <Header title={"Currency converter"} />
+      {ratesData.state === "loading"
+        ? (
+          <Loading />
+        )
+        : (
+          ratesData.state === "error" ? (
+            <Failure />
+          ) : (
+              <>
+                <Label
+                  name={"Amount in PLN*:"}
+                  body={<Input
+                    amount={amount}
+                    setAmount={setAmount} />}
+                />
+                <Label
+                  name={"Valute:"}
+                  body={<Select
+                    currency={currency}
+                    setCurrency={setCurrency}
+                    ratesData={ratesData} />}
+                />
+                <Buttons name={"Convert!"} />
+                <Footer />
+                <Result result={result} />
+              </>
+            )
+        )
+      }
     </Form>
   );
 }

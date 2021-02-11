@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledForm } from "./styled";
 
+
 const Form = ({ children, calculateResult, currency, amount }) => {
 
     const onFormSubmit = (event) => {
