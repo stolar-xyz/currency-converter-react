@@ -59,7 +59,7 @@ function App() {
                     ratesData={ratesData} />}
                 />
                 <Buttons name={"Convert!"} />
-                <Footer />
+                <Footer ratesData={ratesData} />
                 <Result result={result} />
               </>
             )

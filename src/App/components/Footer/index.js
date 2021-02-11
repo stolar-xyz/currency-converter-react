@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledFooter } from "./styled";
 
-const Footer = () => (
+const Footer = ({ ratesData }) => (
     <StyledFooter>
-        The rates are taken from the nbp.pl website from Table 010/A/NBP/2021 of 2021-01-17
+        The rates are taken from the European Central Bank of {Object.values(ratesData.date)}.
     </StyledFooter>
 );
 
