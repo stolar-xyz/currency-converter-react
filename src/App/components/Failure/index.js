@@ -1,9 +1,9 @@
 import { React } from "react";
-import { StyledFailure } from "./styled.js";
+import { StyledFailure } from "./styled";
 
 const Failure = () => (
     <StyledFailure>
-        Something goes wrong...
+        Something went wrong... Please try again in a few seconds.
     </StyledFailure>
 );
 
