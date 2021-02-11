@@ -28,8 +28,8 @@ export const useRatesData = () => {
         };
 
         getRates();
-    }, []);
 
+    }, []);
 
     return ratesData;
 };

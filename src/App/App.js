@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Label from "./components/Label";
 import Select from "./components/Select";
 import Input from "./components/Input";
@@ -10,25 +10,18 @@ import Footer from "./components/Footer";
 import Clock from "./components/Clock";
 import Loading from "./components/Loading";
 import Failure from "./components/Failure";
-import { useRatesData } from "./useRatesData";
-
+import { useCalculateResult } from "./useCalculateResult";
 
 function App() {
-  const [result, setResult] = useState();
-  const [currency, setCurrency] = useState("EUR");
-  const [amount, setAmount] = useState("");
-
-  const ratesData = useRatesData();
-
-  const calculateResult = (currency, amount) => {
-    const rate = ratesData.rates[currency];
-
-    setResult({
-      sourceAmount: +amount,
-      targetAmount: amount * rate,
-      currency,
-    })
-  };
+  const {
+    result,
+    currency,
+    amount,
+    ratesData,
+    setCurrency,
+    setAmount,
+    calculateResult,
+  } = useCalculateResult();
 
   return (
     <Form calculateResult={calculateResult}
