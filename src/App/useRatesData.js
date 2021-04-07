@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_KEY = "6977e0053d1b260e9d5bc3a76953732f";
 const currencies = "USD,PLN,JPY,GBP,AUD,CAD,CHF,CNH,SEK,NZD";
 
-const exchangeRatesAPI = `https://api.exchangerate.host/latest?access_key=${API_KEY}&symbols=${currencies}`;
+const exchangeRatesAPI = `https://api.exchangerate.host/latest?symbols=${currencies}`;
 
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
