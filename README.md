@@ -6,7 +6,7 @@ Live: https://stolar-code.github.io/currency-converter-react/
 
 This is a simple currency converter created for educational purposes.<br>
 For me in this project the main role was getting used to **React & create-react-app** environment.
-Exchange rates are taken form http://exchangeratesapi.io/
+Exchange rates are taken form https://exchangerate.host/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
