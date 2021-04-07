@@ -1,34 +1,38 @@
 # Currency converter React
 
 Live: https://stolar-code.github.io/currency-converter-react/
+
 ## Description
+
 This is a simple currency converter created for educational purposes.<br>
 For me in this project the main role was getting used to **React & create-react-app** environment.
 Exchange rates are taken form http://exchangeratesapi.io/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Used technologies
 
+- HTML
+- CSS
+- JavaScript
+- React
+- JSX
+- create-react-app
+- custom hooks
 
-##  Used technologies
- - HTML
- - CSS
- - JavaScript
- - React
- - JSX
- - create-react-app
- - custom hooks
 ### Libraries
- - gh-pages
- - normalize.css
- - styled-components
- - axios
+
+- gh-pages
+- normalize.css
+- styled-components
+- axios
 
 ## How to use it?
- 1. Type your amount in input (must be in PLN).
- 2. Select the currency you want to convert to.
- 3. Click "Convert!" to check exchange rate of your put amout. 
- 4. The result will be shown at the bottom.
+
+1.  Type your amount in input (must be in EUR).
+2.  Select the currency you want to convert to.
+3.  Click "Convert!" to check exchange rate of your put amout.
+4.  The result will be shown at the bottom.
 
 ## Available Scripts
 
