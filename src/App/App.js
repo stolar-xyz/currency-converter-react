@@ -39,7 +39,7 @@ function App() {
           ) : (
               <>
                 <Label
-                  name={"Amount in PLN*:"}
+                  name={"Amount in EUR*:"}
                   body={<Input
                     amount={amount}
                     setAmount={setAmount} />}

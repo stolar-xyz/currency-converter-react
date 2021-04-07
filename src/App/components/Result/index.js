@@ -6,7 +6,7 @@ const Result = ({ result }) => {
         <StyledResult>
             {!!result && (
                 <>
-                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;
+                    {result.sourceAmount.toFixed(2)}&nbsp;EUR&nbsp;=&nbsp;
 
                     <strong>
                         {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
