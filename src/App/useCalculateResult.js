@@ -3,7 +3,7 @@ import { useRatesData } from "./useRatesData";
 
 export const useCalculateResult = () => {
     const [result, setResult] = useState();
-    const [currency, setCurrency] = useState("EUR");
+    const [currency, setCurrency] = useState("USD");
     const [amount, setAmount] = useState("");
 
     const ratesData = useRatesData();
