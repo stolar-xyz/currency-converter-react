@@ -23,8 +23,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Libraries
 
 - gh-pages
-- normalize.css
 - styled-components
+- styled-normalize
 - axios
 
 ## How to use it?
