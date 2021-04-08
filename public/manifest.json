@@ -1,10 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Currency converter",
   "icons": [
     {
       "src": "images/icon.png",
-      "sizes": "162x162",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],
