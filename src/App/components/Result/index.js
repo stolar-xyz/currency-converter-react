@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledResult } from "./styled";
 
 const Result = ({ result }) => {

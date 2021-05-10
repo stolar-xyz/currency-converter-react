@@ -1,4 +1,4 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App/App';
 import { GlobalStyle } from './App/GlobalStyle';
@@ -8,13 +8,13 @@ import { ThemeProvider } from "styled-components";
 import { Normalize } from 'styled-normalize';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <ThemeProvider theme={theme}>
       <Normalize />
       <GlobalStyle />
       <App />
     </ThemeProvider>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root')
 );
 
