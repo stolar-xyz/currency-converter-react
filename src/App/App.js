@@ -23,41 +23,43 @@ function App() {
   } = useCalculateResult();
 
   return (
-    <Form calculateResult={calculateResult}
-      amount={amount}
-      currency={currency}>
-      <Clock />
-      <Header title={"Currency converter"} />
-      {ratesData.state === "loading"
-        ? (
-          <Loading />
-        )
-        : (
-          ratesData.state === "error" ? (
-            <Failure />
-          ) : (
-              <>
-                <Label
-                  name={"Amount in EUR*:"}
-                  body={<Input
-                    amount={amount}
-                    setAmount={setAmount} />}
-                />
-                <Label
-                  name={"Valute:"}
-                  body={<Select
-                    currency={currency}
-                    setCurrency={setCurrency}
-                    ratesData={ratesData} />}
-                />
-                <Buttons name={"Convert!"} />
-                <Footer ratesData={ratesData} />
-                <Result result={result} />
-              </>
-            )
-        )
-      }
-    </Form>
+    <main>
+      <Form calculateResult={calculateResult}
+        amount={amount}
+        currency={currency}>
+        <Clock />
+        <Header title={"Currency converter"} />
+        {ratesData.state === "loading"
+          ? (
+            <Loading />
+          )
+          : (
+            ratesData.state === "error" ? (
+              <Failure />
+            ) : (
+                <>
+                  <Label
+                    name={"Amount in EUR*:"}
+                    body={<Input
+                      amount={amount}
+                      setAmount={setAmount} />}
+                  />
+                  <Label
+                    name={"Valute:"}
+                    body={<Select
+                      currency={currency}
+                      setCurrency={setCurrency}
+                      ratesData={ratesData} />}
+                  />
+                  <Buttons name={"Convert!"} />
+                  <Footer ratesData={ratesData} />
+                  <Result result={result} />
+                </>
+              )
+          )
+        }
+      </Form>
+    </main>
   );
 }
 
