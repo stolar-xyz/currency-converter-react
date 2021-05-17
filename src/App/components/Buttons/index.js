@@ -1,11 +1,9 @@
 import { Button } from "./styled";
 
 const Buttons = ({ name }) => (
-    <>
-        <Button>
-            {name}
-        </Button>
-    </>
+    <Button>
+        {name}
+    </Button>
 );
 
 export default Buttons;
