@@ -1,6 +1,6 @@
 # Currency converter React
 
-[Demo](https://stolar-code.github.io/currency-converter-react/)
+[Demo](https://stolar-xyz.github.io/currency-converter-react/)
 
 ## Description
 
